@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- BASIC SEO -->
+  <meta name="description" content="A clean, SEO-optimized and accessible website template ready to host on GitHub Pages. Customize for your brand or portfolio."/>
+  <meta name="keywords" content="SEO, accessible HTML, GitHub Pages, portfolio, website template"/>
+  <meta name="author" content="bhoomika"/>
+
+  <!-- Replace the content value below with YOUR token from Google Search Console -->
+  <meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_TOKEN"/>
+
+  <title>My SEO Friendly Website</title>
+
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="My SEO Friendly Website"/>
+  <meta property="og:description" content="A clean and accessible website template ready to host on GitHub Pages."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bhoomika.github.io/"/>
+  <meta property="og:image" content="https://bhoomika.github.io/thumbnail.jpg"/>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+  <style>
+    :root{
+      --main-color:#2563eb;
+      --bg-color:#f8fafc;
+      --text-color:#1e293b;
+    }
+    body{
+      font-family:system-ui,sans-serif;
+      background:var(--bg-color);
+      color:var(--text-color);
+      margin:0;
+      line-height:1.6;
+    }
+    header,footer{
+      background:var(--main-color);
+      color:white;
+      text-align:center;
+      padding:1rem;
+    }
+    nav a{
+      color:white;
+      margin:0 0.75rem;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover{ text-decoration:underline; }
+    main{
+      max-width:800px;
+      margin:2rem auto;
+      padding:1rem;
+    }
+    h1,h2{ color:var(--main-color); }
+    img{ max-width:100%; border-radius:8px; }
+    footer p{ font-size:0.9rem; }
+    button{ cursor:pointer; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Welcome to My SEO-Friendly Website</h1>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About</h2>
+    <p>This is a generic, accessible, and SEO-optimized website built with clean HTML. You can use it for your personal portfolio, brand, or business and host it easily on GitHub Pages.</p>
+    <img src="https://picsum.photos/800/400" alt="A sample banner image representing creativity and growth"/>
+  </section>
+
+  <section id="services" aria-labelledby="services-heading">
+    <h2 id="services-heading">Services</h2>
+    <ul>
+      <li>Web Design & Development</li>
+      <li>SEO Optimization</li>
+      <li>Digital Strategy & Branding</li>
+    </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <p>If you'd like to connect, reach out at
+      <a href="mailto:bhoomika@example.com">bhoomika@example.com</a>.
+      <!-- swap the email above to your real one -->
+    </p>
+    <form aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thanks! This demo form does not send yet.');">
+      <label for="name">Name:</label><br/>
+      <input id="name" name="name" type="text" required/><br/><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="4" required></textarea><br/><br/>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> bhoomika. All rights reserved.</p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
